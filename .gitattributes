@@ -1,2 +1,17 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+#Projeto de Arquiterura
+
+#Digitar área desejada (Quadrado ou Retangulo)
+
+pergunta1 = input("Qual tamanho da largura? ")
+pergunta2 = input("Qual tamanho do comprimento? ")
+valor = int(pergunta1) * int(pergunta2)
+#print(valor)
+
+if pergunta1 == pergunta2:
+  print("É um quadrado de " + str(valor) + " cm")
+else:
+  print("É um retangulo de " + str(valor) + " cm")
+
+valor_por_metro = 15
+valor_total = valor * valor_por_metro
+print("Esse terreno custa R$" + str(valor_total) + ",00")
